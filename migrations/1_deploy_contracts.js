@@ -1,15 +1,15 @@
-//const PancakeFactoryV2 = artifacts.require("PancakeFactoryV2");
-//
-//let addressFeeSetter = "0x4E7C949ae02b253F6FEFBe99D07F2fd6aC873f35";
-//
-//module.exports = function(deployer) {
+// const PancakeFactoryV2 = artifacts.require("PancakeFactoryV2");
+
+// let addressFeeSetter = "0x7DB8f5d6fD9BAc3DFa680a76dBB78579F555C77c";
+
+// module.exports = function(deployer) {
 //    deployer.deploy(PancakeFactoryV2, addressFeeSetter);
-//};
+// };
 
 const PancakeRouterV2 = artifacts.require("PancakeRouterV2");
 
-let weth = "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd";
-let factory = "0x46E9aD48575d08072E9A05a9BDE4F22973628A8E";
+let weth = "0xc778417e063141139fce010982780140aa0cd5ab";
+let factory = "0x3ba577F0159034816C9a7004789ECf4531b9cD1B";
 
 module.exports = function(deployer) {
     deployer.deploy(PancakeRouterV2, factory, weth);
